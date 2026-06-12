@@ -1,4 +1,4 @@
-# swift-todo
+# #1 Todo List App
 <img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-07 at 13 50 53" src="https://github.com/user-attachments/assets/a8d8b60f-8c0f-4ef0-80d1-a5f1108cb049" width="300" height="652"/>
 <img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-07 at 14 19 39" src="https://github.com/user-attachments/assets/dad1692e-d278-4798-8a5c-85aeb401eebc" />
 
@@ -14,7 +14,25 @@
 9. Codable is a protocol that makes a type automatically serializable to and from external formats like JSON. It is a type alias for the two protocols combined: Encodable and Decodable.
 10. Encodable = can be converted TO data (Object → JSON)
 11. Decodable = can be converted FROM data (JSON → Object)
-# uikit-viewcontroller-demo
+
+# #2 ViewController Demo
 <img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-11 at 12 31 40" src="https://github.com/user-attachments/assets/dec9609e-dae0-4eec-982d-a5676456de28" />
 <img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-11 at 12 31 51" src="https://github.com/user-attachments/assets/3591a5f8-dcfc-4b98-979e-5d351f979ee0" />
 <img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-11 at 12 31 58" src="https://github.com/user-attachments/assets/8e59e17a-4fa1-4761-9ca6-f06265f2b27e" />
+
+# #3 Child View Controllers Demo
+<img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-12 at 16 25 59" src="https://github.com/user-attachments/assets/6e8aa60e-99ea-4215-b7e1-544dc555bd57" />
+
+To demonstrate two different ways to embed child View Controllers in iOS: programmatically (SecondChildVC) and via Storyboard Segue (FirstChildVC).
+
+`ViewController` is the Parent which hosts both the child View Controllers.
+
+`SecondChildVC` & `FirstChildVC` are the Children. Currently, they just set thw background color in `viewDidLoad`.
+
+```
+Parent viewDidLoad
+    └── addSecondChildVC()
+            ├── addChild()              → child moves to "pending" state
+            ├── view.addSubview()       → child's view enters the window
+            └── didMove(toParent:)      → child lifecycle events now fire normally
+```
