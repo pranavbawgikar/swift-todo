@@ -36,3 +36,5 @@ Parent viewDidLoad
             ├── view.addSubview()       → child's view enters the window
             └── didMove(toParent:)      → child lifecycle events now fire normally
 ```
+# #4 <a href="https://github.com/pranavbawgikar/swift-demo-projects/tree/main/UITableView-Programmatic">UITableView Demo 1</a>
+<img width="300" height="652" alt="Simulator Screenshot - iPhone 17 Pro - 2026-06-14 at 13 16 58" src="https://github.com/user-attachments/assets/4ef680a4-7b4e-4481-9dd8-d8116f3bbde2" />
